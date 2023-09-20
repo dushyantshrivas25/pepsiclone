@@ -1,0 +1,887 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:"ddd" ;
+    src: url(./178a2cf8-1429-4101-9c89-1f820cd1c5fa.c8c0a0a20d0543b844b63f47d41cf52a.woff2);
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    /* height: 100%; */
+    width: 100vmax;
+}
+.section-1{
+    /* height: 125%; */
+    width: 100vmax;
+    overflow-y:hidden ;
+    /* background-color: aqua; */
+}
+
+.nav{
+    height: 7vmax;
+    width: 100vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#0065C3;  
+    color: #fff;  
+    font-family: "Sofia Pro Regular";
+    font-size: 1.25vmax;
+    font-weight: 100;
+    padding-left: 5vmax;
+    position: fixed;
+    z-index: 99999;
+}
+.nav h5:hover{
+    cursor: pointer;
+}
+.nav-part1{
+    display: flex;
+    align-items: center;
+    gap: 3vmax;
+    margin-left: -28vmax;
+    
+}
+.nav img{
+    height: 4.5vmax;
+    margin-left: -2vmax;
+   
+}
+.nav > img:hover {
+    transform: rotate(30deg);
+}
+.nav-part2 button{
+    padding: .5vmax 1.5vmax;
+    margin-right: 10px;
+    width: 19vmax;
+    background-color: #0065C3;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-right: 40px;
+    font-weight: 600;
+ transition: ease-in-out .4s;
+ font-family: "sofia pro black";
+ font-size: 15px;
+}
+.nav-part2 button:hover{
+background-color: #fff;
+color:#0065C3;
+cursor: pointer;
+}
+.section-1{
+    /* height: 110vh; */
+    width: 100vmax;
+    overflow: hidden;
+}
+
+
+.page-1-container{
+    width: 100vmax;
+    /* height: 100vh; */
+    display: flex;
+}
+
+.page-1{
+    width: 100vmax;
+    /* height: 100vh; */
+    background: url(./background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex ;
+    /* background-color: bisque; */
+    
+}
+.page-1-left{
+    /* height: 100vh; */
+    width: 40vmax;   
+}
+.page-1-left img{
+    height: 50vmax;
+    /* position: absolute; */
+    /* left: -20px; */
+    /* top: 40%; */
+    margin-top: 25%;
+    margin-left: -20%;
+    /* overflow: hidden; */
+  
+}
+.page-1-right{
+    /* height: 100vh; */
+    width: 60vmax;
+    /* position: relative; */
+    /* background-color: cornflowerblue; */
+    /* z-index: 11111; */
+}
+
+.page-1-right img{
+    /* position: absolute;
+    top: 28%;
+    right: 20%; */
+    margin-left: 20%;
+    margin-top: 15%;   
+}
+.page-1-right button{
+/* padding: 1vmax 5vmax; */
+border: 2.5px solid #fff;
+color: white;
+background-color: transparent;
+border-radius: 20px;
+font-size: 1vmax;
+width: 12vw;
+height: 5vh;
+/* position: absolute;
+bottom: 22%;
+left: 40%; */
+margin-left: 38%;
+margin-top: 2%;
+font-family: "sofia pro black";
+    transition-duration: 0.1s, 0.1s;
+    transition-timing-function: ease-out, ease-out;
+    transition-delay: 0s, 0s;
+    transition-property: background-color, color
+
+
+}
+.page-1-right button:hover{
+    background-color: #fff;
+color:#0065C3;
+cursor: pointer;
+
+}
+
+.page-1-right p {
+    color: white;
+    /* position: absolute;
+    bottom: 10%;
+    left: 23%; */
+    margin-top: 10%;
+    font-size: 1vmax;
+    text-align: center;
+  
+    font-family:"Sofia Pro regular" ;
+    font-weight: 100;
+}
+
+.section-2{
+    /* margin-top: -4.8%; */
+    /* height: 104vh; */
+    width: 100vmax;
+    background-color: black;
+    /* position: absolute; */
+    z-index: 99;
+    display: flex;
+    overflow: hidden;
+}
+
+.page-2{
+    /* height: 104vh; */
+    /* width: 100vmax;
+    display: flex;
+    background-color: black; */
+    /* position: absolute; */
+    /* z-index: 999; */
+    /* margin-top: -4.8%; */
+
+}
+
+.page-2-left{
+    /* margin-top: -20%; */
+    /* height: 100%; */
+    width: 50vmax;
+    /* position: relative; */
+}
+.page-2-left .can-black{
+    /* position: absolute;
+    top: -15%;
+    left: -10%; */
+    /* height: 55vmax; */
+    width: 70vmax;
+    margin-top: -8vmax;
+    margin-left: -3vmax;
+  
+}
+.page-2-left .improved-taste{
+    position: absolute;
+    /* left: 70%;
+    top: 9%; */
+    width: 13vmax;
+    margin-left: 37vmax;
+    margin-top: -45vmax;
+    /* margin-top: -400%; */
+    z-index: 1;
+}
+.page-2-right{
+    /* height: 100%; */
+    width: 50vmax;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vmax;
+    margin-top: 8vmax;
+   
+}
+
+.page-2-right .headline{
+    width: 35vmax;
+}
+
+
+.page-2-right .try-it{
+    /* height: 25px; */
+}
+.page-2-right-bottom {
+    /* height:30%; */
+    width: 80vmax; 
+    /* background-color: bisque; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin-left: 40vmax;
+    gap: 1vmax;
+}
+.page-2-right-bottom .steve{
+    /* height: 100px; */
+    width: 18vmax;
+}
+.page-2-right-bottom .ben{
+    /* height: 100px; */
+    width: 18vmax;
+}
+
+.page-2-right-bottom p{
+font-size: .8vmax;
+text-align: center;
+font-family: "Sofia Pro Black";
+color: #fff;
+margin-top: 2vmax;
+}
+
+.section-3{
+    /* margin-top: -50%; */
+    /* height: 100%; */
+    width: 100vmax;
+    background:url(./Desktop_Background.png);
+    background-size: cover;
+    background-position: center;
+    /* margin-top: 50%; */
+    display: flex;
+}
+.page-3-left{
+    /* height: 100%; */
+    width: 50vmax;
+    /* background-color: red; */
+    /* position: relative; */
+}
+.page-3-right{
+    /* height: 100%; */
+    width: 50vmax;
+    /* background-color: red; */
+    /* position: relative; */
+  
+}
+.page-3-left .nitro-can{
+    /* height: 610px; */
+    width: 33vmax;
+    margin-left: 15vmax;
+    margin-top: 3vmax;
+    /* position: absolute; */
+    /* right:4% ; */
+    /* top: 7%; */
+}
+
+.page-3-right .nitro-logo{
+    /* height: 280px; */
+    /* position: absolute; */
+    /* left:4% ;
+    top: 30%; */
+    width: 30vmax;
+    margin-top: 14vmax;
+    margin-left: 2vmax;
+}
+.page-3-right h1{
+    color: #fff;
+    font-family: "ddd";
+    font-size: 1.8vmax;
+    margin-left: 6vmax;
+}
+.page-3-bottom-r{
+/* position: absolute; */
+/* bottom: 22%;
+left: 13.8%; */
+}
+.page-3-bottom-r button{
+    padding: .5vmax 2vmax;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 20px;
+    /* position: absolute; */
+    /* left: 25%; */
+    font-size: 1vmax;
+    font-weight: bold;
+    margin-left: 11vmax;
+
+}
+
+.section-4{
+    /* height: 100%; */
+    width: 100vmax;
+    background:url(./04_Generation_BG_D_2.png);
+    display: flex;
+}
+.page-4-left{
+    /* height: 100%; */
+    width: 34vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vmax;
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    font-family: "Sofia Pro Black";
+    /* margin: 2vmax; */
+    padding: 3vmax;
+    padding-left: 1vmax;
+
+}
+
+.page-4-l-top{
+/* height: 40%; */
+width: 30vmax;
+background-color: #1437BF;
+/* margin-top: 60px; */
+
+}
+.page-4-l-bottom{
+    /* height: 40%; */
+    width: 30vmax;
+    background-color: #1437BF;
+}
+.page-4-left img{
+    object-fit: cover;
+    /* height: 85%; */
+    width: 30vmax;
+}
+
+.page-4-right{
+    /* height: 100%; */
+    width: 76vmax;
+background-color:yellow;
+background-image: url(./PEP_BWP_D.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+/* position: relative; */
+}
+
+.page-4-right .better-png{
+    /* height: 150px; */
+    width: 35vmax;
+    margin-top: 33vmax;
+    margin-left: 30vmax;
+    /* position: absolute;
+    right: 0;
+    bottom: 2%; */
+}
+.section-5{
+    height: 100%;
+    width: 100vmax;
+    /* position: relative; */
+    background-image: url(./mango-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.section-5 .bg-1-png{
+    /* height: 650px; */
+    width: 70vmax;
+    margin-left: 30vmax;
+    margin-top: -200vmax;
+    /* position: absolute; */
+    /* right: 0;
+    bottom: 0; */
+}
+.section-5 .bg-2-png{
+/* height: 550px; */
+width: 100vmax;
+margin-top: 10vmax;
+/* margin-top: -20vmax; */
+/* padding-top: 10vmax; */
+/* margin-top: 50vmax; */
+/* position: absolute; */
+/* bottom: 0%;
+left: 0%; */
+}
+.section-5 .headline-mango{
+    position: absolute;
+    /* z-index: 9;
+    height: 290px;
+    left: 3%;
+    top: 12%; */
+    height: 21vmax;
+    margin-top: 5vmax;
+    margin-left: 3vmax;
+}
+.section-5 .thats-what{
+    height:1max;
+    width: 30vmax;
+    position: absolute;
+    /* /* bottom: 5%; */
+    left: 3%; 
+    margin-top: -5vmax;
+}
+
+.section-6{
+    /* height: 110%; */
+    width: 100vmax;
+    background-color: black;
+}
+.section-6 video{
+    /* height: 100%; */
+    width: 100vmax;
+    object-fit: cover;
+}
+.section-7{
+    /* height: 110%; */
+    width: 100vmax;
+    background-image: url(./twil-bg.jpg);
+    display: flex;
+    /* position: relative; */
+    background-position: center;
+    background-size: cover;
+    
+}
+.page-7-left{
+ /* height: 100%; */
+width: 55vmax;
+/* position: relative;  */
+overflow-x: hidden;
+/* -webkit-box-orient: horizontal; */
+/* -webkit-box-direction: normal; */
+
+}
+.page-7-left .twil-can{
+width: 55vmax;
+/* height: 50vmax; */
+ /* position: absolute; */
+ /* bottom: 0; */
+ /* top: 10%; */
+ transition: all ease 1s;
+ margin-top: 4vmax;
+ /* position: relative; */
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.page-7-right{
+    /* height: 100%; */
+    width: 45vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    }
+
+    .page-7-right .twill-header{
+        /* height:340px; */
+        width: 35vmax;
+        transition:all ease 1s;
+
+    }
+
+    .section-8{
+        /* height: 80%; */
+        width: 100vmax;
+        background:url(./04_Generation_BG_D_2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        border-bottom: 1px solid #0065C3;
+        padding: 5vmax 3vmax;
+    }
+    .page-8-left{
+        /* height: 100%; */
+        width: 50vmax;
+        /* background-color:olive ; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* position: relative; */
+    }
+
+    .page-8-left h1{
+        color: #fff;
+        font: 200 5vmax "ddd";
+        line-height: 5vmax;
+        margin-left: 5vmax;
+        /* padding-top: 5vmax; */
+    }
+
+    .page-8-left p{
+        color: #fff;
+        font: 100 1vmax "Sofia Pro Regular";
+        margin-top: .5vmax;
+        margin-left: -10vmax;
+    }
+
+    .page-8-left button{
+        padding: .5vmax 2vmax;
+        border: 2px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 20px;
+        /* position: absolute;
+        left: 19%; */
+        font-size: 1vmax;
+        font-weight: bold;
+        margin-top: 2vmax;
+        margin-left: -22vmax;
+        transition: all ease .5s;
+    }
+    .page-8-left button:hover{
+        color: #0065C3;
+        background-color: #fff;
+    }
+
+    .page-8-right{
+        /* height: 100%; */
+        width: 50vmax;
+        /* background-color:olive ; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .page-8-right .promotion{
+        height: 260px;
+        margin-top: 50px;
+        margin-right: 110px;
+    }
+
+    .section-9{
+        height: 50%;
+        width: 100%;
+        /* background-color: red; */
+        text-align: center;
+        border-top:1px solid #fff;
+
+    }
+
+    .section-9 h1 {
+        font-size: 60px;
+        font-weight: 900;
+        color: white;
+        font-family: "ddd";
+        color: #0065C3;
+        
+    }
+
+
+    .page-9-main{
+    height: 80%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    }
+
+    .page-9-main div{
+        height: 100%;
+        width: 18%;
+        background-color: black;
+        overflow: hidden;
+
+
+    }
+    .page-9-main div img{
+        height: 100%;
+        width: 100%;
+        transition: all ease-in .2s;
+    }
+    .page-9-main div img:hover{
+        scale: 1.1;
+        transform: rotate(5deg);
+
+    }
+
+    .section-10{
+        height: 40%;
+        width: 100%;
+        margin-top: 1.5%;
+        background-color: #0065C3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-10 div{
+        height:100%;
+        width:20%;
+        /* background-color: magenta; */
+        padding: 5% 2%;  
+    }
+    .section-10 div h1{
+        color: #fff;
+        font-size: 15px;
+        font-family: "sofia pro regular";
+        margin-top: 5px;
+        margin-left: -40px;
+        padding-top: 5px;
+        transition: ease-in-out .2s;
+    }
+
+    .section-10 div h1:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .section-10 .button-icon{
+        width: 30%;
+/* background-color: #1437BF; */
+display: flex;
+flex-direction: column;
+gap: 20px;
+    }
+
+    .button-icon button{
+        padding: 5px 20px;
+        width: 280px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: transparent;
+        color: white;
+        font: 600 15px "Sofia Pro Black";
+        border: 2px solid #fff;
+        transition: all ease-in-out .2s;
+        
+    }
+    .button-icon button:hover{
+        background-color: #fff;
+        color: #0065C3;
+    }
+    .icons {
+        width: 150px;
+        height: 40px;
+        display: flex;
+        margin-left: 18px;
+        margin-top: -10px;
+    }
+    .icons p i{
+        font-size: 35px;
+        color: white;
+        margin-right: 16px;
+        transition: ease-in-out .2s;
+        
+    }
+    .icons p i:hover{
+        opacity: .5;
+    }
+
+    .nav-up-slide{
+/* height:calc(100% ); */
+width: 100vmax;
+background-color: #fff;
+position: absolute;
+top: -200%;
+/* position: fixed; */
+z-index: 11111;
+/* overflow: hidden; */
+transition: all ease-in-out .3s;
+
+    }
+
+    .nav-up-slide h1{
+        font:200 12px "sofia pro regular";
+        text-align: center;
+        margin-top: 1vmax;
+        margin-bottom: 1vmax;
+        /* margin-bottom: 10px; */
+    }
+    .nav-up-slide img{
+        height:15vmax;
+        margin-left:8.5vmax ;
+        /* width: 10vmax; */
+        /* object-fit: cover; */
+        /* margin-left: 90px; */
+    
+    }
+    .nav-up-slide .div1{
+        /* height: 33.3%; */
+        width: 100vmax;
+        /* background-color: yellow; */
+        /* overflow: hidden; */
+        margin-top: 7vmax;
+        display: flex;
+    }
+    .nav-up-slide .div1 >div{
+        /* height: 100%; */
+        width: 25vmax;
+        border: .1px solid gray;
+        /* padding-top: 10vmax; */
+        
+    }
+    .nav-up-slide .div2{
+        /* height: 33.3%; */
+        width: 100vmax;
+        /* background-color: navy; */
+        /* overflow: hidden; */
+        display: flex;
+
+    }
+    .nav-up-slide .div2 >div{
+        /* height: 100%; */
+        width: 25vmax;
+        border: .1px solid gray; 
+    }
+    .nav-up-slide .div3{
+       /* height: 33.3%; */
+        width: 100vmax;
+        /* background-color: greenyellow; */
+        /* overflow: hidden; */
+        display: flex;
+    }
+    .nav-up-slide .div3 >div{
+        /* height: 100%; */
+        width: 25vmax;
+        border: .1px solid gray;    
+    }
+
+    .nav-up-slide .nav img{
+        height: 50px;
+    }
+
+
+
+
+
+
+
+
+     @media only screen and (max-width:760px){
+    
+         
+.nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#0065C3;  
+    color: #fff;  
+    font-family: "Sofia Pro Regular";
+    font-size: 15px;
+    font-weight: 100;
+    padding-left: 35px;
+    position: fixed;
+    z-index: 99999;
+}
+.nav-part1{
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 12px;  
+}
+
+.main{
+    overflow-x: hidden;
+}
+
+.nav-part1 h5,button{
+    display: none;
+}
+.nav-part1 .view-products{
+    display: initial;
+}
+.page-1-container
+{
+    display: flex;
+    flex-direction:column-reverse;
+    margin: 2vmax;
+}
+
+.page-1-left img{
+    min-height:calc((8/16)*100%);
+}
+.page-1-right img{
+    max-width: calc(70% - (2*2vw));
+}
+.page-1-right p{
+    font-size: 2vmax;
+    margin: 4vmax;
+}
+
+.section-2
+{
+    display: flex;
+    flex-direction:column-reverse;
+    /* margin: 2vmax; */
+}
+
+.page-2-left{
+    padding: 2vh 0;
+    margin-right: 2vmax;
+}
+
+.page-2-right{
+    
+}
+.section-3
+{
+    display: flex;
+    flex-direction:column-reverse;
+    /* margin: 2vmax; */
+}
+.page-3-left img{
+    width:95%;
+    margin-right: 5vmax;
+}
+.page-3-right{
+    text-align: center;
+}
+
+.section-4{
+    display: flex;
+    flex-direction:column-reverse;
+    
+}
+.page-4-left{
+    width: 80vmax;
+    margin: auto;
+}
+
+.page-4-l-top,.page-4-l-bottom{
+    width: 50vmax;
+    margin-right: 30vmax;
+}
+.page-4-l-top img{
+    width:60vh;
+}
+.page-4-l-bottom img{
+    width:60vh;
+}
+@media only screen and (min-width :768px) {
+    .page-1 h1{
+        font-size: calc(var(--vw, 1vw)*1);
+    }
+       
+    
+}
+
+
+
+
+}
